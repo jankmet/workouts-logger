@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Workout:
+  = @workout_item.workout_id
+%p
+  %b Count:
+  = @workout_item.count
+%p
+  %b Day:
+  = @workout_item.day
+%p
+  %b Month:
+  = @workout_item.month
+%p
+  %b Year:
+  = @workout_item.year
+
+= link_to 'Edit', edit_workout_item_path(@workout_item)
+\|
+= link_to 'Back', workout_items_path
