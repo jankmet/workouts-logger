@@ -6,8 +6,12 @@ gem 'rack', '~> 1.4.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
 gem 'sqlite3'
+
+# Production
+group :production do
+  gem 'pg'
+end
 
 
 # Gems used only for assets and not required
